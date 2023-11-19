@@ -1902,6 +1902,7 @@ section {
   margin-bottom: 25px;
 }
 
+
 .footer .footer-info .logo img {
   max-height: 40px;
   margin-right: 6px;
@@ -1913,6 +1914,18 @@ section {
   letter-spacing: 1px;
   color: #fff;
   font-family: var(--font-primary);
+}
+
+@media only screen and (max-width: 390px) {
+  .footer .footer-info .logo span {
+    font-size: 18px; /* Adjust the font size for small screens */
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .footer .footer-info .logo span {
+    font-size: 14px; /* Adjust the font size for small screens */
+  }
 }
 
 .footer .footer-info p {
