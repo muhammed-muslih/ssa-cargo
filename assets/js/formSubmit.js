@@ -38,8 +38,6 @@ const sendMail = () => {
         subject,
         message 
     }
-    console.log(params);
-    console.log(isValid);
     const SERVICE_ID = "service_c6bzpg9"
     const TEMPLATE_ID = "template_mqs247m"
     isValid&&emailjs.send(SERVICE_ID,TEMPLATE_ID,params)

@@ -41,7 +41,11 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
   </head>
 
   <body>
@@ -61,9 +65,9 @@
         <nav id="navbar" class="navbar">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
           </ul>
         </nav>
         <!-- .navbar -->
@@ -108,10 +112,13 @@
         <div class="container" data-aos="fade-up">
           <div>
             <iframe
-              style="border: 0; width: 100%; height: 340px"
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
-              frameborder="0"
-              allowfullscreen
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3609.24431379296!2d55.36384967538289!3d25.22869487769065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjXCsDEzJzQzLjMiTiA1NcKwMjEnNTkuMSJF!5e0!3m2!1sen!2sin!4v1700367373957!5m2!1sen!2sin"
+              width="100%"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
           <!-- End Google Maps -->
@@ -122,7 +129,10 @@
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>
+                    Gate No 5,Umm Ramool,Rashidiya,Dubai,United Arab Emirates,Po
+                    Box - 238479
+                  </p>
                 </div>
               </div>
               <!-- End Info Item -->
@@ -131,7 +141,7 @@
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p>ssaseacargo@yahoo.com</p>
                 </div>
               </div>
               <!-- End Info Item -->
@@ -139,8 +149,15 @@
               <div class="info-item d-flex">
                 <i class="bi bi-phone flex-shrink-0"></i>
                 <div>
-                  <h4>Call:</h4>
-                  <p>+1 5589 55488 55</p>
+                  <h4>Mobile:</h4>
+                  <p>+971 564757219</p>
+                </div>
+              </div>
+              <div class="info-item d-flex">
+                <i class="bi bi-phone flex-shrink-0"></i>
+                <div>
+                  <h4>Landline:</h4>
+                  <p>+971 42250250</p>
                 </div>
               </div>
               <!-- End Info Item -->
@@ -158,7 +175,7 @@
                       placeholder="Your Name"
                       required
                     />
-                    <span style="color: red;" id="name-error"></span>
+                    <span style="color: red" id="name-error"></span>
                   </div>
                   <div class="col-md-6 form-group mt-3 mt-md-0">
                     <input
@@ -169,7 +186,7 @@
                       placeholder="Your Email"
                       required
                     />
-                    <span style="color: red;" id="email-error"></span>
+                    <span style="color: red" id="email-error"></span>
                   </div>
                 </div>
                 <div class="form-group mt-3">
@@ -181,7 +198,7 @@
                     placeholder="Subject"
                     required
                   />
-                  <span style="color: red;" id="subject-error"></span>
+                  <span style="color: red" id="subject-error"></span>
                 </div>
                 <div class="form-group mt-3">
                   <textarea
@@ -192,14 +209,16 @@
                     id="message"
                     required
                   ></textarea>
-                  <span style="color: red;" id="message-error"></span>
+                  <span style="color: red" id="message-error"></span>
                 </div>
                 <div class="my-3">
-                  <div id="error-message"style='color:red'></div>
+                  <div id="error-message" style="color: red"></div>
                   <div id="sent-message"></div>
                 </div>
                 <div class="text-center">
-                  <button type="button" id="submit-btn" onclick="sendMail()">Send Message</button>
+                  <button type="button" id="submit-btn" onclick="sendMail()">
+                    Send Message
+                  </button>
                 </div>
               </form>
             </div>
@@ -268,11 +287,12 @@
           >
             <h4>Contact Us</h4>
             <p>
-              A108 Adam Street <br />
-              New York, NY 535022<br />
-              United States <br /><br />
-              <strong>Phone:</strong> +1 5589 55488 55<br />
-              <strong>Email:</strong> info@example.com<br />
+              Gate No 5,Umm Ramool,<br />
+              Rashidiya,Dubai,United Arab Emirates<br />
+              Po Box - 238479<br /><br />
+              <strong>Mobile:</strong> +971 564757219<br />
+              <strong>Landline:</strong> +971 42250250<br />
+              <strong>Email:</strong> ssaseacargo@yahoo.com<br />
             </p>
           </div>
         </div>
@@ -308,10 +328,17 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/aos/aos.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <script src="assets/js/formValidate.js"></script>
     <script src="assets/js/formSubmit.js"></script>
     <script
@@ -319,9 +346,9 @@
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
     <script type="text/javascript">
-      (function(){
-         emailjs.init("SYZGWqFjiB5WYSb67");
+      (function () {
+        emailjs.init("SYZGWqFjiB5WYSb67");
       })();
-   </script>
+    </script>
   </body>
 </html>
